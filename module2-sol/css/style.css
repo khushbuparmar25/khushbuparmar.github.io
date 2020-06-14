@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+h1{
+    font-family: cursive;
+    text-align: center;
+    margin-top:35px;
+    margin-bottom:35px;
+    font-size:75% larger;
+}
+
+.container1{
+    background-color: rgb(153, 150, 150);
+    border: 3px solid black;
+    font-size:18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width:30%;
+    float:left;
+    margin-right: 15px;
+    margin-left:20px;
+    padding:25px 10px 10px 10px;
+    position: relative;
+    
+}
+.container2{
+    background-color: rgb(153, 150, 150);
+    border: 3px solid black;
+    font-size:18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width:30%;
+    float:left;
+    margin-right: 15px;
+    margin-left:20px;
+    padding:25px 10px 10px 10px;
+    position:relative;
+}
+.container3{
+    background-color: rgb(153, 150, 150);
+    border: 3px solid black;
+    font-size:18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width:30%;
+    float:left;
+    margin-right: 15px;
+    margin-left:20px;
+    padding:25px 10px 10px 10px;
+    position: relative;
+}
+
+.box1{
+    background-color: pink;
+    width:150px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    text-align: center;
+    position:absolute;
+    top:0;
+    right:0;
+    margin:0;
+    
+}
+.box2{
+    background-color: rgb(173, 28, 28);
+    width:150px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    text-align: center;
+    color:white;
+    position:absolute;
+    top:0;
+    right:0;
+    margin:0;
+}
+.box3{
+    background-color: rgb(238, 238, 44);
+    width:150px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    text-align: center;
+    position:absolute;
+    top:0;
+    right:0;
+    margin:0;
+}
+
+.container{
+    position:absolute;
+    margin-top: 50px;
+    font-size:25% larger;
+    width:100%;
+ 
+}
+
+@media(min-width:992px){
+    .container1, .container2, .container3{
+        width:30%;
+        margin-left:10px;
+        float:left;
+        
+    }
+    .container{
+        width:95%;
+        margin-left:50px;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px){
+    .container1, .container2, .container3{
+        float:left;
+        
+    }
+    .container3{
+        margin-top:20px;
+        width:94%;
+    }
+    .container1, .container2{
+        width:45%;
+        float:left;
+    }
+    
+}
+@media(max-width:767px){
+    .container1, .container2, .container3{
+        width:90%;
+        margin-top:20px;
+        
+    }
+}
+    
