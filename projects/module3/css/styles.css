@@ -1,0 +1,48 @@
+
+
+h1, h2 {
+    text-transform:capitalize;
+}
+
+.heading{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 40px;
+}
+.container1, .container2, .container3{
+    background-color: gray;
+    padding:0 8px 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+    margin-left:20px;
+    margin-right:20px;
+}
+#header-nav{
+    border-radius: o;
+    border: 0;
+    background-color: gray;
+    line-height: 80px;
+    padding: 10px 20px ;
+    border: 3px solid black ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.container1 h2{
+    font-weight: 900px;
+
+}
+
+.container2 h2{
+    font-weight: 900px;
+
+}
+
+.container3 h2{
+    font-weight: 900px;
+
+}
+
