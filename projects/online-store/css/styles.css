@@ -294,7 +294,7 @@ footer{
 .btn{
     background-color: rgb(194, 190, 190) !important;
     border:#333 3px solid !important;
-    text-align: justify !important;
+    
     /*transition-duration:0.2s !important;
     transition-property:all !important;
     transition-timing-function:ease-in-out !important;*/
@@ -532,6 +532,7 @@ form input{
     .nav1{
         background-color: rgb(31, 30, 30) !important;
     }
+
 
     #search{
         height: 20px !important;
@@ -776,8 +777,9 @@ form input{
         padding-bottom:10px;
     }
     a.brand-logo{
-        padding-right:200px ;
-        font-size:25px;
+        padding-right:200px !important;
+        padding-left:10px !important ;
+        font-size:25px !important;
     }
     a#hov{
         font-size:196x;
@@ -794,9 +796,9 @@ form input{
     }
     .carousel{
         height:400px !important;
-        margin-bottom:0 !important;
-        padding-bottom:0 !important;
-        
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+        margin-top:0 !important;
     }
     div.input-field.col.s12.diff{
         padding-right:40px !important;
