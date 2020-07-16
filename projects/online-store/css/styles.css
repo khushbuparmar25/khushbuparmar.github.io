@@ -685,12 +685,10 @@ form input{
     }
     div.input-field.col.s12{
         margin: 5px 0 !important;
-        padding-right:30px !important;
+        padding-right:70px !important;
+        padding-left:20px !important;
     }
-    div.input-field.col.s12.diff{
-        padding-right:100px !important;
-        padding-left:0 !important;
-    }
+    
     #form1{
         width:70% !important;
         /*padding-left:50px !important;*/
@@ -711,7 +709,7 @@ form input{
         margin-top: 5px;
     }
     div.input-field.col.s12.diff{
-        padding-right:40px !important;
+        padding-right:55px !important;
         padding-left:10px !important;
     }
     span.helper-text{
