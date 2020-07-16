@@ -616,7 +616,9 @@ form input{
     .c1{
         display:grid !important;
         grid-template-columns: 1fr 1fr !important ;
+        
     }
+
     .nav{
         display:none;
     }
