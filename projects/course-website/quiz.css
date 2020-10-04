@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Bree Serif');
+
+body{
+    box-sizing: border-box;
+    font-family: 'Bree Serif' !important;
+}
+
+.header1, .header2{
+    color:#333 !important;
+    text-align: center !important; 
+}
+
+
+  /* The side navigation menu */
+  .sidebar {
+    font-family: 'Bree Serif';
+    font-size:15px;
+    margin: 0;
+    padding-top: 10px;
+    width: 80px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 10px 10px 16px 4px;
+    text-decoration: none;
+  }
+  
+  .fa-home{
+    padding-left:25px;
+  }
+  /* Active/current link */
+  .sidebar a.active {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+  }
+
+.container1, .container2, .container3, .container4, .container5{
+    font-size:20px !important;
+    margin:25px 50px 25px 550px !important;
+    border-top: 20px !important;
+    padding:10px 50px 10px 50px !important;
+    width:30% !important;
+    border-radius: 10px !important;
+    border: #333 2px solid !important;
+}
+.btn{
+    font-size:25px !important;
+    margin:0 0 0 700px !important;
+    padding:0 0 0 80px !important;    
+    border-radius:5px !important;
+    padding: 5px 24px !important; 
+    cursor: pointer !important;
+}
+
+.btn:hover{
+    background-color: rgb(105, 103, 103) !important;
+}
+
+#s-icon{
+    font-size:20px !important;
+    padding:5px !important;
+}
+
+.options{
+    cursor: pointer;
+
+}
+
+@media(min-width:1201px) and (max-width:1500px){
+    .container1, .container2, .container3, .container4, .container5{
+        margin:25px 50px 25px 500px !important;
+        width:30% !important;
+    }
+    .btn{
+        font-size:25px !important;
+        margin:0 0 0 650px !important;
+        padding:5px 10px 5px 10px !important;
+    }
+}
+
+
+@media(min-width:1025px) and (max-width:1200px){
+    .container1, .container2, .container3, .container4, .container5{
+        margin:25px 50px 25px 350px !important;
+        padding:10px 50px 10px 50px !important;
+        width:40% !important;
+    }
+    .btn{
+        font-size:25px !important;
+        margin:0 0 0 520px !important;
+        padding:5px 10px 5px 10px !important;
+    }
+}
+
+
+@media(min-width:769px) and (max-width:1024px){
+    .container1, .container2, .container3, .container4, .container5{
+        margin:25px 50px 25px 220px !important;
+        padding:10px 60px 10px 60px !important;
+        width:50% !important;
+    }
+    
+    .header1{
+        padding-right:150px !important;
+    }
+    .btn{
+        font-size:25px !important;
+        margin:0 0 0 400px !important;
+        padding:5px 10px 5px 10px !important;
+    }
+}
+
+
+@media(min-width:481px) and (max-width:768px){
+    .container1, .container2, .container3, .container4, .container5{
+        margin:25px 50px 25px 100px !important;
+        padding:10px 50px 10px 50px !important;
+        width:60% !important;
+    }
+    
+    .header1{
+        padding-right:100px !important;
+    }
+    .btn{
+        font-size:25px !important;
+        margin:0 0 0 200px !important;
+        padding:5px 10px 5px 10px !important;
+    }
+}
+
+
+@media(max-width:480px){
+    .container1, .container2, .container3, .container4, .container5{
+        margin:25px 80px 25px 60px !important;
+        padding:10px 50px 10px 50px !important;
+        width:80% !important;
+        font-size:25px !important;
+    }
+    
+    .header1{
+        margin-left:10px !important;
+    }
+    .header2{
+        margin-left:30px !important;
+        width:100% !important;
+        font-size:20px !important;
+    }
+    .btn{
+        font-size:25px !important;
+        margin:0 0 0 150px !important;
+        padding:5px 10px 5px 10px !important;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="help.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Help</title>
+</head>
+<body>
+
+    
+  <!-- The sidebar -->
+  <div class="sidebar">
+    <a href="home.html"><i class="fa fa-fw fa-home"></i> Dashborad</a>
+    <a href="quiz.html">Quiz</a>
+    <a class="active bg-info " href="help.html">Help</a> <!--contact us page-->
+    <a href="about.html">About Us</a>
+  </div>
+
+
+    <div class="container">
+        <div style="text-align:center" >
+            <h2 >Contact Us</h2>
+            <p>How can we help you?</p>
+            <p>You are more than welcome to contact us at any hour</p>
+        </div>
+        <div class="row">
+            <div class="column">
+            <img src="images/help.jpg" style="width:100%">
+            </div>
+            <div class="column">
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">                    
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                <label for="subject">Query</label>
+                <textarea id="subject" name="subject" placeholder="Write your query here..." style="height:170px"></textarea>
+                
+                <button class="btn waves-effect bg-dark text-white" type="submit" name="action" value="Submit" onclick="check()">Submit
+                    <i class="material-icons right" id="s-icon">send</i>
+                </button>
+                
+            </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

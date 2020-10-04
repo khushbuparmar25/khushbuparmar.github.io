@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Bree Serif');
+
+
+body{
+    box-sizing: border-box;
+  }
+
+  /* The side navigation menu */
+.sidebar {
+    font-family: 'Bree Serif';
+    font-size:15px;
+    margin: 0;
+    padding-top: 10px;
+    width: 80px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 10px 10px 16px 4px;
+    text-decoration: none;
+  }
+  
+  .fa-home{
+    padding-left:25px;
+  }
+  /* Active/current link */
+  .sidebar a.active {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+  }
