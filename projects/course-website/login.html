@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Login</title>
+
+</head>
+<body>
+  <!--main navbar-->
+  <div class="topnav" id="myTopnav">
+    <a href="home.html" class="active bg-info text-white">i Learn</a>
+    <a href="login.html" class="waves-effect waves-whites waves-light btn button text-info" ><i class="fa fa-fw fa-user"></i>LOGIN</a>
+    <a href="Register.html" class="waves-effect waves-whites waves-light btn button bg-info text-white" ><i class="fa fa-fw fa-user"></i>REGISTER</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+    </a>
+  </div> 
+
+  <div class="showcase">
+    <form> 
+      <div class="container">          
+        <h1>Login</h1>
+        <hr>
+        <div class="container">
+          <label for="uname"><b>Username</b></label><br>
+          <input type="text" placeholder="Enter Username" name="uname" required><br>
+      
+          <label for="psw"><b>Password</b></label><br>
+          <input type="password" placeholder="Enter Password" name="psw" required><br>
+
+          <button type="submit" class="bg-info"><a href="home2.html" style="color:white">Login</a></button><br><br>
+          <p>Don't have an account? <a href="register.html">Register</a>.</p>
+          <label>
+            <input type="checkbox" name="remember"> Remember me
+          </label>
+          
+        </div>
+           
+      </div>
+    </form>
+  </div>
+</body>
+</html>

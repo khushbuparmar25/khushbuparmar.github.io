@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css?family=Bree Serif');
+
+body{
+    box-sizing: border-box;
+    font-family: 'Bree Serif' !important;
+  }
+
+/* The side navigation menu */
+.sidebar {
+  font-family: 'Bree Serif';
+  margin: 0;
+  padding: 0;
+  width: 110px;
+  /*background-color: #f1f1f1;*/
+  background: #abbaab;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ffffff, #cccfcc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: fixed;
+  overflow: auto;
+  height:70%;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 10px 10px 16px 4px;
+  text-decoration: none;
+}
+
+.fa-home{
+  padding-left:25px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  color: white;
+  text-decoration: none;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+}
+
+.topnav {
+    z-index:10;
+    width:100%;
+    top:0;
+    position:fixed;
+    height:60px;
+    padding-bottom:10px;  
+    background-color: #333;
+    overflow: hidden;  
+  }
+    
+.topnav a {
+  height:60px;
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd !important;
+}
+
+.topnav a.active {
+  background-color: #333 !important;
+  text-decoration: none;
+  float:left;
+  color:black;
+  height:40px;
+  padding:5px;
+  margin:10px 5px 50px 5px;
+}
+
+.topnav a.active:hover{
+  background-color: #333 !important;
+  color:white;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.button {
+  font-family: 'Bree Serif';
+  color:white !important;
+  text-align: center !important;
+  padding: 5px 20px 35px 20px!important;
+  display: inline-block !important;
+  margin: 10px 12px 30px 2px !important;
+  height:10px !important;
+  cursor: pointer !important;
+  border-radius: 10px !important;
+}
+
+.button:hover{
+  background-color: #DCD9D4 !important;
+}
+
+.showcase{
+  width:100%;
+  margin-top:60px !important;
+}
+
+h2{
+  margin-top:0 !important;
+}
+
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  color:black !important;
+}
+
+label{
+  color:black;
+}
+
+/* Style the container/contact section */
+.container {
+  color:black !important;
+  font-size:18px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+label{
+  font-size:15px;
+}
+
+.btn-submit{
+  font-size: 20px !important;
+  margin-top:20px;
+  margin-left:10px;
+  padding: 6px 12px 40px 12px !important;
+  cursor: pointer;    
+  border-radius:5px !important; 
+  cursor: pointer !important;
+}
+
+.btn-submit:hover{
+    background-color: rgb(105, 103, 103) !important;
+}
+
+#submit{
+  font-size:18px !important;
+  padding:1px 2px 100px 2px !important;
+}
+
+.page-footer{
+  width:100%;
+  background-color: #333 !important;
+  color:white !important;
+  text-align: center !important;
+  margin-top:10px !important; 
+}
+
+.fa-linkedin, .fa-instagram, .fa-google, .fa-github {
+  padding: 20px;
+  font-size: 15px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+
+.fa-google {
+  border-radius: 50px;
+  background:#3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  border-radius: 50px;
+  background:#3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  border-radius: 50px;
+  background:#3B5998;
+  color: white;
+}
+
+.fa-github {
+  border-radius: 50px;
+  background:#3B5998;
+  color: white;
+}
+
+.fa-linkedin:hover{
+  border-radius: 50px;
+  opacity: 0.8;
+  color:white !important;
+  text-decoration: none !important;
+}
+.fa-instagram:hover{
+  border-radius: 50px;
+  opacity: 0.8;
+  color:white !important;
+  text-decoration: none !important;
+}
+ .fa-google:hover{
+  border-radius: 50px;
+  opacity: 0.8;
+  color:white !important;
+  text-decoration: none !important;
+ }
+ .fa-github:hover {
+  border-radius: 50px;
+  opacity: 0.8;
+  color:white !important;
+  text-decoration: none !important;
+}
+
+a.sidenav-trigger.nav1-icon{
+  padding:20px !important;
+  background-color: #333 !important;
+  border:none !important;
+}
+
+.nav1-icon:hover{
+  color:white !important;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+@media(min-width:1201px){
+  .nav1, .nav1-icon{
+    display:none !important;
+  }
+}
+
+@media(min-width:1025px) and (max-width:1200px){
+  .nav1, .nav1-icon{
+      display:none !important;
+  }
+  
+}
+
+
+@media(min-width:769px) and (max-width:1024px){  
+  .nav1{
+    background-color:white !important;
+    opacity:1;
+  }
+  .sidenav-overlay{
+    opacity: 0 !important;
+  }
+  .hide-on-med-and-down{
+    display:none!important;
+  }
+  
+}
+
+@media(min-width:481px) and (max-width:768px){
+  .nav1{
+    background-color:white !important;
+    opacity:1;
+  }
+  .sidenav-overlay{
+    opacity: 0 !important;
+  }
+  .hide-on-med-and-down{
+    display:none!important;
+  }
+}  
+
+@media(max-width:480px){
+  .nav1{
+    background-color:white !important;
+    opacity:1;
+  }
+  .sidenav-overlay{
+    opacity: 0 !important;
+  }
+  .hide-on-med-and-down{
+    display:none!important;
+  }
+}
