@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -12,42 +12,41 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="home.js"></script>
+    <script src="js/home.js"></script>
     <title>Courses</title>
 </head>
 <body>
   <!--main navbar-->
   <div class="topnav" id="myTopnav">  
-    <a href="home.html" class="active bg-info text-white">i Learn</a>
+    <a href="/dashboard" class="active bg-info text-white">i Learn</a>
     <ul id="slide-out" class="sidenav nav1 bg-white ">
-      <li><a href="dashboard.html" class="black-text " style="background-color:rgb(228, 224, 224)">Dashboard</a><br></li>
-      <li><a href="watch-list.html" class="black-text ">Watch-list</a><br></li>
-      <li><a href="help.html" class="black-text ">Help</a><br></li>
-      <li><a href="about.html" class="black-text ">About</a><br></li>
-      <li><a href="login.html" class="black-text " >Login</a><br></li>
-      <li><a href="Register.html" class="black-text ">Register</a><br></li>
+      <li><a href="/dashboard" class="black-text ">Dashboard</a><br></li>
+      <li><a href="/watch-list2" class="black-text ">Watch-list</a><br></li>
+      <li><a href="/help2" class="black-text ">Help</a><br></li>
+      <li><a href="/about2" class="black-text ">About</a><br></li>
+      <li><a href="/quiz" class="black-text " style="background-color:rgb(212, 209, 209)">quiz</a><br></li>
+      <li><a href="/" class="black-text " >Logout</a><br></li>
     </ul>
     <a href="#" data-target="slide-out" class="sidenav-trigger nav1-icon"><i class="material-icons nav1-icon">menu</i></a> 
-    <a href="login.html" class="hide-on-med-and-down waves-effect waves-whites waves-light btn button bg-info text-white" ><i class="fa fa-fw fa-user"></i>Login</a>
-    <a href="Register.html" class="hide-on-med-and-down waves-effect waves-whites waves-light btn button bg-info text-white" ><i class="fa fa-fw fa-user"></i>Register</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
-    
+    <a href="/" class="hide-on-med-and-down waves-effect waves-whites waves-light btn button bg-info text-white" ><i class="fa fa-fw fa-user"></i>Logout</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
     </a>
-  </div>  
+</div>   
 
   <!-- The sidebar -->
   <div class="sidebar hide-on-med-and-down">
-    <a class="active bg-info " href="home.html"><i class="fa fa-fw fa-home"></i> Dashborad</a>
-    <a href="watch-list.html">Watchlist</a>
-    <a href="help.html">Help</a>
-    <a href="about.html">About Us</a>
+    <a href="/dashboard"><i class="fa fa-fw fa-home"></i> Dashborad</a>
+    <a href="/watch-list2">Watchlist</a>
+    <a class="active bg-info " href="/quiz">Quiz</a>
+    <a href="/help2">Help</a>
+    <a href="/about2">About Us</a>
   </div>
-
 
   <!--showcase of courses-->
   <div class="showcase">
     <div class="explore">
-      <h3>Courses to explore!</h3>
+      <h3>Test yourself and build your confidence</h3>
       <br>
       <h4>Technical courses</h4>
     </div>
@@ -55,15 +54,13 @@
     <div class="container">
       <div class="row">
         <div class="col s12 m6">
-          <div class="card">
+          <div class="card" style="border: 2px solid #333;" >
             <div class="card-image">
-              <!--<a href="help.html" target="_blank"><img class="activator" src="images/c1.jpg"></a>-->
-              <img src="images/python.jpg">
+              <a href="python.html" target="_blank"><img class="activator" src="images/quiz-py.png"></a>
             </div>
             <div class="card-content">
               <p>Python and its Frameworks</p>
-              <p style="font-size:12px;">(login to view the course)</p>
-              <a class="btn tooltipped" data-position="bottom" data-tooltip="Login first">Add to watch-later</a>
+              <button type="button" class="btn btn-secondary"><a href="/quiz/python"> Take Quiz >> </a></button>
             </div>
           </div>
         </div>
@@ -71,14 +68,29 @@
 
       <div class="row">
         <div class="col s12 m6">
-          <div class="card">
+          <div class="card" style="border: 2px solid #333;">
             <div class="card-image">
-              <img src="images/javascript.jpg">
+                <a href="javascript.html" target="_blank"><img class="activator" src="images/quiz-js.png"></a>
+            </div>
+            <div class="card-content">              
+              <p>Javascript and its frameworks</p>
+              <button type="button" class="btn btn-secondary" ><a href="/quiz/javascript">Take Quiz >></a></button>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card" style="border: 2px solid #333;">
+            <div class="card-image">
+                <a href="c.html" target="_blank"><img class="activator" src="images/quiz-c.png"></a>
             </div>
             <div class="card-content">
-              <p>Javascript and its Frameworks</p>
-              <p style="font-size:12px;">(login to view the course)</p>
-              <a class="btn tooltipped" data-position="bottom" data-tooltip="Login first">Add to watch-later</a>
+              <p>C++, C sharp and Java</p>           
+              <button type="button" class="btn btn-secondary" ><a href="/quiz/c">Take Quiz >></a></button>
+              </button>
             </div>
           </div>
         </div>
@@ -86,30 +98,15 @@
 
       <div class="row">
         <div class="col s12 m6">
-          <div class="card">
+          <div class="card" style="border: 2px solid #333;">
             <div class="card-image">
-              <img src="images/c.jpg">
-            </div>
-            <div class="card-content">
-              <p>C++, C Sharp and Java</p>
-              <p style="font-size:12px;">(login to view the course)</p>
-              <a class="btn tooltipped" data-position="bottom" data-tooltip="Login first">Add to watch-later</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/raspberry.jpg">
+                <a href="raspberry.html" target="_blank"><img class="activator" src="images/quiz-rasp.png"></a>
             </div>
             <div class="card-content">
               <p>Raspberry Pi</p>
               <br>
-              <p style="font-size:12px;">(login to view the course)</p>
-              <a class="btn tooltipped" data-position="bottom" data-tooltip="Login first">Add to watch-later</a>
+              <button type="button" class="btn btn-secondary" ><a href="/quiz/raspberry">Take Quiz >></a></button>
+              </button>
             </div>
           </div>
         </div>
@@ -117,15 +114,15 @@
 
       <div class="row">
         <div class="col s12 m6">
-          <div class="card">
+          <div class="card" style="border: 2px solid #333;">
             <div class="card-image">
-              <img src="images/microcontroller.jpg">
+                <a href="8086.html" target="_blank"><img class="activator" src="images/quiz-8086.png"></a>
             </div>
             <div class="card-content">
               <p>8086/8085/8051</p>
               <br>
-              <p style="font-size:12px;">(login to view the course)</p>
-              <a class="btn tooltipped" data-position="bottom" data-tooltip="Login first">Add to watch-later</a>
+              <button type="button" class="btn btn-secondary" ><a href="/quiz/8086">Take Quiz >></a></button>
+              </button>
             </div>
           </div>
         </div>
@@ -133,15 +130,15 @@
 
       <div class="row">
         <div class="col s12 m6">
-          <div class="card">          
+          <div class="card" style="border: 2px solid #333;">          
             <div class="card-image">
-              <img src="images/database.jpg">
+                <a href="database.html" target="_blank"><img class="activator" src="images/quiz-database.png"></a>
             </div>
             <div class="card-content">
-              <p>Databases</p>
+              <p>Database</p>
               <br>
-              <p style="font-size:12px;">(login to view the course)</p>
-              <a class="btn tooltipped" data-position="bottom" data-tooltip="Login first">Add to watch-later</a>
+              <button type="button" class="btn btn-secondary" ><a href="/quiz/database">Take Quiz >></a></button>
+              </button>
             </div>
           </div>
         </div>
@@ -156,14 +153,14 @@
       <div class="container">
         <div class="row">
           <div class="col s12 m6">
-            <div class="card">
+            <div class="card" style="border: 2px solid #333;">
               <div class="card-image">
-                <img src="images/computer.jpg">
+                <a href="cs.html" target="_blank"><img class="activator" src="images/quiz-comp.png"></a>
               </div>
               <div class="card-content">
                 <p>Computer Science and IT</p>
-                <p style="font-size:12px;">(login to view the course)</p>
-                <a class="btn tooltipped" data-position="bottom" data-tooltip="Login first">Add to watch-later</a>
+                <button type="button" class="btn btn-secondary" ><a href="/quiz/cs">Take Quiz >></a></button>
+                </button>
               </div>
             </div>
           </div>
@@ -171,14 +168,14 @@
   
         <div class="row">
           <div class="col s12 m6">
-            <div class="card">
+            <div class="card" style="border: 2px solid #333;">
               <div class="card-image">
-                <img src="images/electronics.jpg">
+                <a href="extc.html" target="_blank"><img class="activator" src="images/quiz-electronic.png"></a>
               </div>
               <div class="card-content">
                 <p>Electronics and Telecomm</p>
-                <p style="font-size:12px;">(login to view the course)</p>
-                <a class="btn tooltipped" data-position="bottom" data-tooltip="Login first">Add to watch-later</a>
+                <button type="button" class="btn btn-secondary" ><a href="/quiz/extc">Take Quiz >></a></button>
+                </button>
               </div>
             </div>
           </div>
@@ -186,27 +183,20 @@
   
         <div class="row">
           <div class="col s12 m6">
-            <div class="card">
+            <div class="card" style="border: 2px solid #333;">
               <div class="card-image">
-                <img src="images/mech.jpg">
+                <a href="mech.html" target="_blank"><img class="activator" src="images/quiz-mech.png"></a>
               </div>
               <div class="card-content">
-                <p>Mechanical Engineering </p>
-                <p style="font-size:12px;">(login to view the course)</p>
-                <a class="btn tooltipped" data-position="bottom" data-tooltip="Login first">Add to watch-later</a>
+                <p>Mechanical</p>
+                <br>
+                <button type="button" class="btn btn-secondary" ><a href="/quiz/mech">Take Quiz >></a></button>
+                </button>
               </div>
             </div>
           </div>
         </div>
-      </div>
         
-    
-      <div class="container-img">
-        <img src="images/snow1.jpg" alt="Snow">
-        <p class="btn1" >Get your concepts cleared</p><br>
-        <p class="btn2">Test yourself via various quizes</p>
-        <p style="color: white;">... </p>
-        <button class="btn" style="font-family:Bree Serif"><a href="Register.html">join for free</a></button>
       </div>
     </div>
 
@@ -227,10 +217,6 @@
     <script>
       $(document).ready(function(){
         $('.sidenav').sidenav();
-      });
-
-      $(document).ready(function(){
-        $('.tooltipped').tooltip();
       });
     </script>
   
